@@ -1,6 +1,6 @@
 """Checks whether a Solar System Body is in a past or future K2 field of view.
 """
-from __future__ import print_function
+
 
 import argparse
 import logging
@@ -11,7 +11,7 @@ try:
     from urllib.request import urlopen
 except ImportError:
     # Legacy Python
-    from urllib2 import urlopen
+    from urllib.request import urlopen
 
 import numpy as np
 import pandas as pd
